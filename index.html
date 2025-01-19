@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rīgas Stila un modes tehnikums</title>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQopu927OhDNTuSDWUMXeYFvfIU7imp-F5phA&s" type="image/png">
+    <link rel="apple-touch-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQopu927OhDNTuSDWUMXeYFvfIU7imp-F5phA&s">
+    <link rel="icon" sizes="192x192" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQopu927OhDNTuSDWUMXeYFvfIU7imp-F5phA&s">
+    <link rel="icon" sizes="512x512" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQopu927OhDNTuSDWUMXeYFvfIU7imp-F5phA&s">
+
+    <style>
+        body {
+            background-color: red;
+            margin: 0; 
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            height: 1000px;
+            font-size: 1.5vw;
+        }
+        
+        #Main {
+            background-color: white;
+            padding: 10px; 
+            position: sticky; 
+            top: 0; 
+            width: 98.4%; 
+            z-index: 1000;
+        }
+        #upper {
+            display: flex;
+            align-items: center; 
+            padding: 10px;
+            justify-content: space-between; 
+        }
+        #logo-container {
+            display: flex;
+            align-items: center;
+        }
+        #rigalogo {
+            height: 50px;
+            margin-right: 10px; 
+            border-radius: 50%;
+        }
+        #header3 {
+            margin: 0; 
+            font-size: 1.5rem;
+        }
+        #homebtn, #loginbtn {
+            border-style: solid;
+            height: 6.8vh;
+            width: 6.4vw;
+            border-width: 1px;
+            background-color: transparent;
+            transition: 0.2s;
+            font-size: 1vw;
+        }
+        #substitution, #timetable {
+            border-style: solid;
+            height: 6.8vh;
+            width: 6.4vw;
+            font-size: 1vw;
+            border-width: 1px;
+            background-color: white;
+            transition: 0.2s;
+        }
+        #homebtn:hover,b#loginbtn:hover, #substitution:hover, #timetable:hover {
+            cursor: pointer;
+            border-color: red;
+            color: white;
+            background-color: red;
+        }
+        #lower {
+            display: flex;
+            flex-direction: column;
+            align-items: start; 
+            height: 80%; 
+            width: 95vw;
+            max-width: 100%; 
+            margin: 0 auto;
+            background-color: transparent;
+            border-style: solid;
+            border-width: 1.5px;
+            border-color: white;
+            margin-top: 50px;
+            padding-bottom: 50px;
+            border-radius: 10px;
+        }
+        #paragraph1{
+            margin-left: 50px;
+        }
+        #paragraph2{
+            margin-top: 100px;
+        }
+        #enddiv{
+            background-color: white;
+            width: 100%;
+            height: 40vh;
+            margin-top: 50px;
+            padding-left: 0px;
+            padding-top: 20px;
+        } 
+        #item {
+            margin-left: 50px;
+        }
+        #cncdiv, #phtdiv, #updtdiv {
+            display: inline-block;
+        }
+        #hrefid{
+            width: 0px;
+            color: transparent;
+        }
+        #updatediv{
+            width: 88vw;
+            height: auto;
+            background-color: transparent;
+            border-color: black;
+            border-style: solid;
+            border-width: 2px;
+            margin: 20px;
+            padding-left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div id="Main">
+        <div id="upper">
+            <div id="logo-container">
+                <img id="rigalogo" src="https://raw.githubusercontent.com/RigaStilaUnTehnikums/info/main/rigas.jpg" alt="Logo">
+                <h3 id="header3" data-eng="Rīgas Stila un modes tehnikums" data-lv="Rīgas Stila un modes tehnikums">Rīgas Stila un modes tehnikums</h3>
+            </div>
+            <div>
+                <a id="hrefid" href="https://rigastilauntehnikums.github.io/info/">
+                    <button id="homebtn" data-eng="Home" data-lv="Sākums">Home</button>
+                </a>
+                <button id="loginbtn" data-eng="Login" data-lv="Pieteikties">Login</button> 
+                <button id="timetable" data-eng="Timetable" data-lv="Stundas">Timetable</button>
+                <button id="substitution" data-eng="Substitution" data-lv="Aizvietošana">Substitution</button>
+            </div>
+        </div>
+    </div>
+    <div id="lower">
+        <div id="updatediv">
+            <h3 id="titel">Update 19.01.2025</h3>
+            Home page finished design. Updates might be added monthly. There has also been some updates on visuals. <br>
+            -Translation to latvian has been added  <br>
+            -Faster transitions <br>
+            -Bigger fonts on buttons <br>
+            -News section is being worked on  <br> <br>
+        </div>
+        <div id="updatediv">
+            <h3 id="titel">Update 18.01.2025</h3>
+            <p>Mobile version is now being worked on. There has also been some updates on visuals. <br>
+                -Picture carousel was removed due to scaling issues <br>
+                -Youtube RSMT trailer was added with an iFrame tag
+            </p>
+        </div>
+        <div id="updatediv">
+            <h3 id="titel">Update 17.01.2025 Publish</h3>
+            <p>
+                The website has been published to github pages. There has also been some updates on visuals. <br>
+                -Bigger fonts <br>
+                -Responsive design
+                <br>
+                -Transitions
+            </p>
+        </div>
+        <div id="updatediv">
+            <h3 id="titel">Creation 10.01.2025</h3>
+            <p>This is date this website was created.<br> 
+                 For educational purposes only.
+            </p>
+        </div>
+    </div>
+    <div id="enddiv">
+        <div id="cncdiv">
+            <h3 id="paragraph1" data-eng="Contact" data-lv="Kontakti">Contact</h3>
+            <span id="item" data-eng="Address: Ūdeļu iela 22, Rīga, Latvija, LV - 1064" data-lv="Adrese: Ūdeļu iela 22, Rīga, Latvija, LV - 1064">Address: <span id="span4">Ūdeļu iela 22, Rīga, Latvija, LV - 1064</span></span>
+            <br><br>
+            <span id="item" data-eng="Reception Hotline: 27706214, 20140052" data-lv="Reģistratūras karstā līnija: 27706214, 20140052">Reception Hotline: <span id="span4">27706214, 20140052</span></span>
+            <br><br>
+            <span id="item" data-eng="E-mail: rsmt@rsmt.lv, uznemsana@rsmt.lv" data-lv="E-pasts: rsmt@rsmt.lv, uznemsana@rsmt.lv">E-mail: <span id="span4">rsmt@rsmt.lv, uznemsana@rsmt.lv</span></span>
+        </div>
+        <div id="updtdiv"> 
+            <h3 id="paragraph1" data-eng="Updates" data-lv="Jaunumi">Updates</h3>
+            <span id="item" data-eng="18.01.2025: V1.3" data-lv="18.01.2025: V1.3">19.01.2025: <span id="span4">V1.4</span></span>
+            <br><br>
+            <span id="item" data-eng="17.01.2025: V1.2" data-lv="17.01.2025: V1.2">18.01.2025: <span id="span4">V1.3</span></span>
+            <br><br>
+            <span id="item" data-eng="10.01.2025: V1.1" data-lv="10.01.2025: V1.1">17.01.2025: <span id="span4">V1.2</span></span>
+        </div>
+        <div id="phtdiv"> 
+            <h3 id="paragraph1" data-eng="Photogallery" data-lv="Foto galerija">Photogallery</h3>
+            <br><br><br><br><br>
+        </div>
+    </div>
+</body>
+</html>
